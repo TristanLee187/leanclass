@@ -286,7 +286,6 @@ def R (a b : ℤ) : ℤ :=
   else
     0
 
-end
 termination_by L a b => b ; R a b => b
 
 #eval L (-21) 15 -- infoview displays `2`
