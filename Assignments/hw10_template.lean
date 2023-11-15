@@ -284,8 +284,7 @@ def R (a b : ℤ) : ℤ :=
   else if b < 0 then
     L b (fmod a (-b)) + (fdiv a (-b)) * R b (fmod a (-b))
   else
-    0
-  end
+    0 end
 
 termination_by L a b => b ; R a b => b
 
