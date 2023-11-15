@@ -105,7 +105,6 @@ termination_by T n => 3 * n - 1
 theorem problem4a (n : ℤ) : T n = n ^ 2 := by
   sorry
 
-/- Hint:  prove uniqueness, then use it to prove problem4b -/
 theorem uniqueness (a b : ℤ) (h : 0 < b) {r s : ℤ}
     (hr : 0 ≤ r ∧ r < b ∧ a ≡ r [ZMOD b])
     (hs : 0 ≤ s ∧ s < b ∧ a ≡ s [ZMOD b]) : r = s := by
